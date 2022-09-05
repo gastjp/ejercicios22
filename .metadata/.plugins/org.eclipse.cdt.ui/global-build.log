@@ -1,0 +1,5 @@
+20:41:27 **** Incremental Build of configuration Debug for project practicapunteros ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\practicapunteros.o" "..\\src\\practicapunteros.c" 
+gcc -o practicapunteros.exe "src\\practicapunteros.o" 
+Info: Nothing to build for practicapunteros

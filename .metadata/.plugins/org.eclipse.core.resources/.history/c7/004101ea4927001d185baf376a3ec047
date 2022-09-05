@@ -1,0 +1,69 @@
+//Ejercicio 2-3:
+//Debemos alquilar el servicio de transporte para llegar a Mar del Plata con un
+//grupo de personas (no más de 100), de cada persona debemos obtener los datos:
+//número de cliente,
+//estado civil ('s' para soltero", 'c' para casado o 'v' viudo),
+//edad( solo mayores de edad, más de 17),
+//temperatura corporal (validar por favor)
+//y genero('f' para femenino, 'm' para masculino, 'o' para no binario).
+//NOTA: El precio por pasajero es de $600.
+//Se debe informar (solo si corresponde):
+//a) La cantidad de personas con estado  civil"viudo" de más de 60 años.
+//b) el número de cliente y edad de la mujer soltera más joven.
+//c) cuánto sale el viaje total sin descuento.
+//d) si hay más del 50% de los pasajeros que tiene más de 60 años , el precio final tiene un descuento del 25%, que solo mostramos si corresponde.
+
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 5
+#define PRECIO 600
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	int nroCliente[TAM];
+	char estCivil;
+	int validEst=0;
+	int edad[TAM];
+	float tempCorpo[TAM];
+	char genero;
+	int precioViaje = PRECIO;
+	int i;
+
+	char bufferChar[8];
+
+	for (i = 0; i < TAM; i++) {
+
+		do {
+			fflush(stdin);
+			fflush(stdout);
+			printf("\nIngrese numero de cliente %d(solo numeros):",i+1);
+
+		} while (scanf("%d", &nroCliente[i]) != 1);
+
+
+		do {
+			fflush(stdin);
+			fflush(stdout);
+			printf("\nIngrese estado civil de cliente %d('S' 'C' o 'V'):",i+1);
+			scanf("%c",&estCivil);
+			printf("\n%c",estCivil);
+			if(estCivil == 'S' || estCivil == 'C' || estCivil == 'V')
+			{
+				validEst=1;
+			}
+
+		}while(validEst != 1);
+
+		printf("\nNumero de cliente:%d\n"
+				"Estado civil:%c\n"
+				"Edad:%d\n"
+				"Temperatura corporal:%.2f\n"
+				"Genero:%c\n\n\n", nroCliente[i], estCivil,edad[i], tempCorpo[i],
+				genero);
+
+	}
+
+	return 0;
+
+}

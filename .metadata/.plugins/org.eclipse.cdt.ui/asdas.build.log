@@ -1,0 +1,11 @@
+01:00:53 **** Rebuild of configuration Debug for project asdas ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\asdas.o" "..\\src\\asdas.c" 
+..\src\asdas.c: In function 'main':
+..\src\asdas.c:13:6: warning: unused variable 'resultado' [-Wunused-variable]
+  int resultado;
+      ^~~~~~~~~
+gcc -o asdas.exe "src\\asdas.o" 
+
+01:00:54 Build Finished. 0 errors, 1 warnings. (took 951ms)
+

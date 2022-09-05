@@ -1,0 +1,10 @@
+02:09:01 **** Incremental Build of configuration Debug for project sdsfdgvd ****
+make all 
+'Building target: sdsfdgvd'
+'Invoking: Cross GCC Linker'
+gcc  -o "sdsfdgvd"  ./src/sdsfdgvd.o   
+'Finished building target: sdsfdgvd'
+' '
+
+02:09:02 Build Finished. 0 errors, 0 warnings. (took 524ms)
+

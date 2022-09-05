@@ -1,0 +1,9 @@
+00:44:59 **** Build of configuration Debug for project clase1v2 ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Users/gasto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220805-1047/jre/bin/server;C:/Users/gasto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220805-1047/jre/bin;C:/Users/gasto/AppData/Local/Temp/eoiB36B.tmp//plugins/org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/gasto/AppData/Local/Temp/eoiB36B.tmp//plugins/org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\gasto\AppData\Local\Microsoft\WindowsApps;;C:\Users\gasto\Downloads;;C:\Users\gasto\Downloads]
+
+00:44:59 Build Failed. 1 errors, 0 warnings. (took 71ms)
+

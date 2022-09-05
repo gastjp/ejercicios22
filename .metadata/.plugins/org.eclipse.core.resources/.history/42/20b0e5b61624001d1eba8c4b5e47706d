@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout,NULL);
+	int numeroUno;
+	int numeroDos;
+	int numeroTres;
+	int resultado;
+
+	printf("Numero uno: ");
+	scanf("%d", &numeroUno);
+	printf("Numero dos: ");
+	scanf("%d", &numeroDos);
+	printf("Numero dos: ");
+	scanf("%d", &numeroTres);
+
+
+if (numeroUno>numeroDos && numeroUno>numeroTres)
+{
+	printf("El numero más grande es %d",numeroUno);
+}
+
+else if (numeroDos>numeroUno && numeroDos>numeroTres)
+{
+	printf("El numero más grande es %d",numeroDos);
+}
+
+else if (numeroTres>numeroUno && numeroTres>numeroDos)
+{
+	printf("El numero más grande es %d",numeroTres);
+}
+
+
+
+
+if (numeroUno<numeroDos && numeroUno<numeroTres)
+{
+	printf("El numero más chico es %d",numeroUno);
+}
+
+else if (numeroDos<numeroUno && numeroDos<numeroTres)
+{
+	printf("El numero más chico es %d",numeroDos);
+}
+
+else if (numeroTres<numeroUno && numeroTres<numeroDos)
+{
+	printf("El numero más chico es %d",numeroTres);
+}
+
+
+	return 0;
+}

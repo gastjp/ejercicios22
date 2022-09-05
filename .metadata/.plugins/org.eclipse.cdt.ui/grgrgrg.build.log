@@ -1,0 +1,10 @@
+02:09:01 **** Incremental Build of configuration Debug for project grgrgrg ****
+make all 
+'Building target: grgrgrg'
+'Invoking: Cross GCC Linker'
+gcc  -o "grgrgrg"  ./src/grgrgrg.o   
+'Finished building target: grgrgrg'
+' '
+
+02:09:01 Build Finished. 0 errors, 0 warnings. (took 418ms)
+

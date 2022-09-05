@@ -1,0 +1,18 @@
+//Ingresar 5 caracteres e informar cuantas letras p (minúsculas) se ingresaron.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	char cadenaC[5];
+
+	printf("%c",cadenaC[0]);
+	printf("%c",cadenaC[1]);
+	printf("%c",cadenaC[2]);
+	printf("%c",cadenaC[3]);
+	printf("%c",cadenaC[4]);
+
+	return EXIT_SUCCESS;
+}

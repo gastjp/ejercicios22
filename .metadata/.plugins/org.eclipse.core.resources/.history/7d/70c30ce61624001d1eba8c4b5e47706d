@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout,NULL);
+	int numeroUno;
+	int numeroDos;
+	int numeroTres;
+	int numeroMasGrande;
+	int numeroMasChico;
+	int numeroMedio;
+	int resultado;
+
+	printf("Numero uno: ");
+	scanf("%d", &numeroUno);
+	printf("Numero dos: ");
+	scanf("%d", &numeroDos);
+	printf("Numero dos: ");
+	scanf("%d", &numeroTres);
+
+
+if (numeroUno>numeroDos && numeroUno>numeroTres)
+{
+	printf("El numero más grande es %d",numeroUno);
+	numeroMasGrande = numeroUno;
+}
+
+else if (numeroDos>numeroUno && numeroDos>numeroTres)
+{
+	printf("El numero más grande es %d",numeroDos);
+	numeroMasGrande = numeroDos;
+}
+
+else if (numeroTres>numeroUno && numeroTres>numeroDos)
+{
+	printf("El numero más grande es %d",numeroTres);
+	numeroMasGrande = numeroTres;
+}
+
+
+
+
+if (numeroUno<numeroDos && numeroUno<numeroTres)
+{
+	printf("El numero más chico es %d",numeroUno);
+	numeroMasChico = numeroUno;
+}
+
+else if (numeroDos<numeroUno && numeroDos<numeroTres)
+{
+	printf("El numero más chico es %d",numeroDos);
+	numeroMasChico = numeroDos;
+}
+
+else if (numeroTres<numeroUno && numeroTres<numeroDos)
+{
+	printf("El numero más chico es %d",numeroTres);
+	numeroMasChico = numeroTres;
+}
+
+if (numeroUno<numeroMasGrande && numeroUno>numeroMasChico)
+{
+	printf("El numero medio es %d",numeroUno);
+	numeroMedio = numeroUno;
+}
+
+else if (numeroDos<numeroMasGrande && numeroDos>numeroMasChico)
+{
+	printf("El numero medio es %d",numeroDos);
+	numeroMedio = numeroDos;
+}
+
+else if (numeroTres<numeroMasGrande && numeroTres>numeroMasChico)
+{
+	printf("El numero medio es %d",numeroTres);
+	numeroMedio = numeroTres;
+}
+
+
+	return 0;
+}
