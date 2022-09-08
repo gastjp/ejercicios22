@@ -1,5 +1,9 @@
-20:41:27 **** Incremental Build of configuration Debug for project practicapunteros ****
+10:52:25 **** Incremental Build of configuration Debug for project clase 4-1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\practicapunteros.o" "..\\src\\practicapunteros.c" 
-gcc -o practicapunteros.exe "src\\practicapunteros.o" 
-Info: Nothing to build for practicapunteros
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\clase 4-1.o" "..\\src\\clase 4-1.c" 
+..\src\clase 4-1.c: In function 'main':
+..\src\clase 4-1.c:11:6: warning: unused variable 'resultado' [-Wunused-variable]
+  int resultado;
+      ^~~~~~~~~
+gcc -o "clase 4-1.exe" "src\\clase 4-1.o" "src\\utn.o" 
+Info: Nothing to build for clase 4-1

@@ -1,9 +1,0 @@
-//Ingresar 5 caracteres e informar cuantas letras p (minúsculas) se ingresaron.
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
-	return EXIT_SUCCESS;
-}
