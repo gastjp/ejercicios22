@@ -92,6 +92,51 @@ int getInt(int* resP, int min, int max)
 	}
 	return retorno;
 }
+int getFloat(float* resP, float min, float max)
+{
+	int retorno = 0;
+	int resultadoScanf=0;
+	float numeroIngresado;
+
+	printf("\nIngrese un numero flotante: ");
+	resultadoScanf = scanf("%f",&numeroIngresado);
+
+	if(resP != NULL)
+	{
+
+		if(resultadoScanf != 1)
+		{	retorno = -1; // si no es entero, error -1
+			printf("\nEl numero no es flotante. Cod. Error %d\n",retorno);
+		}
+		else if(resultadoScanf == 1 && numeroIngresado < min)
+		{
+			retorno = -2; //si entero y menor que minimo, error -2
+			printf("\nEl numero no puede ser menor que el minimo "
+					"establecido (%.2f)."
+					"Cod. Error %d\n",min,retorno);
+		}
+		else if(resultadoScanf == 1 && numeroIngresado > max)
+		{
+			retorno = -3; //si entero y mayor que max, error -3
+			printf("\nEl numero no puede ser mayor que el maximo "
+					"establecido (%.2f)."
+					"Cod. Error %d\n",max,retorno);
+		}
+
+		else if(resultadoScanf == 1 && numeroIngresado >= min && numeroIngresado <= max)
+		{
+			retorno = 1; // si es entero, mayor que minimo y menor que max
+			*resP = numeroIngresado;
+			printf("\nNumero cargado %.2f."
+					"Retorno %d\n",*resP,retorno);
+		}
+	}
+	else
+	{
+		printf("\nPuntero vacío.\n Cod. Error %d",retorno);
+	}
+	return retorno;
+}
 
 
 int Sumar1(int num1, int num2, int* resultado)
