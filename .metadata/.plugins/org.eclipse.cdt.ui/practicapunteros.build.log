@@ -1,1 +1,8 @@
-Info: Nothing to build for practicapunteros
+14:48:01 **** Rebuild of configuration Debug for project practicapunteros ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calculos.o" "..\\src\\calculos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\practicapunteros.o" "..\\src\\practicapunteros.c" 
+gcc -o practicapunteros.exe "src\\calculos.o" "src\\practicapunteros.o" 
+
+14:48:01 Build Finished. 0 errors, 0 warnings. (took 547ms)
+

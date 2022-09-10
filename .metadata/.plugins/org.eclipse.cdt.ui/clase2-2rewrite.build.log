@@ -1,1 +1,7 @@
-Info: Nothing to build for clase2-2rewrite
+14:48:00 **** Rebuild of configuration Debug for project clase2-2rewrite ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\clase2-2rewrite.o" "..\\src\\clase2-2rewrite.c" 
+gcc -o clase2-2rewrite.exe "src\\clase2-2rewrite.o" 
+
+14:48:00 Build Finished. 0 errors, 0 warnings. (took 345ms)
+

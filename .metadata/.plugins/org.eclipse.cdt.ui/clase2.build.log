@@ -1,1 +1,21 @@
-Info: Nothing to build for clase2
+14:48:00 **** Rebuild of configuration Debug for project clase2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\clase2.o" "..\\src\\clase2.c" 
+..\src\clase2.c: In function 'main':
+..\src\clase2.c:154:3: warning: 'promedio' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   printf(
+   ^~~~~~~
+     "Min %d\nMax: %d\nSuma: %d\nPromedio:%.2f\nCantidad de pares:%d\n"
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       "Cantidad de impares:%d\nMayor de pares:%d\nSuma de positivos:%d\n"
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       "Producto de negativos:%d\n", min, max, resultado,
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     promedio, contPares, contImpares, maxPares, resultadoPositivos,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     resultadoNegativos);
+     ~~~~~~~~~~~~~~~~~~~
+gcc -o clase2.exe "src\\clase2.o" 
+
+14:48:00 Build Finished. 0 errors, 1 warnings. (took 349ms)
+
